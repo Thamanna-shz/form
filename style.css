@@ -19,19 +19,39 @@ body{
 .form{
     font-size: 30px;
     background-color: white;
-    opacity: 0.5;
+    opacity: 0.6;
     width: 430px;
-    height:400px;
+    height:350px;
     padding-left:30px;
     padding-top:25px;
 }
 .btn{
-    border-radius: 4px;
+    /* border-radius: 4px;
     background-color: orchid;
-    cursor: pointer;
+    cursor: pointer; */
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        /* padding: 15px 32px; */
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        height:35px;
+        margin-top:18px;
+        text-align: center;
+        border-radius: 10px;
+        
+      
 
     
 }
 .text{
     margin-left: 42px;
+}
+.mtext{
+    margin-left: 63px;
+}
+.gender{
+    font-size:20px;
 }

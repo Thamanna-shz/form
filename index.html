@@ -13,25 +13,30 @@
   <div class="container">
     <div>
       <form class="form" action="/index.html">
-        <label for="fname">Name:</label>
-        <input class="text" type="text" id="name" name="name" value=""><br>
-        <label for="fname">Email:</label>
-        <input class="text" type="text" id="name" name="email" value=""><br>
-        <label for="fname">Password:</label>
-        <input type="text" id="name" name="password" value=""><br>
-        <label for="fname">Phone:</label>
-        <input class="text" type="text" id="name" name="number" value=""><br>
+        <label>Name:</label>
+        <input class="text" type="text" id="name" name="text" placeholder="john" value="" pattern="[a-z]{1,15}"
+        title="Username should only contain lowercase letters. e.g. john" required><br>
+        <label >Email:</label>
+        <input class="text" type="email" id="email" name="email" placeholder="abc@gmail.com "value="" required><br>
+        <label>Password:</label>
+        <input type="password" id="pwd" name="pwd" placeholder="password" pattern=".{8,}" title="Eight or more characters" required>
+        <br>
+        <label>Phone:</label>
+        <input class="text" type="tel" id="phone" name="phone" value="" placeholder="phone number" pattern="[0-9]{10}" title="phone number should contain numbers and 10 digits" required><br>
         <p class="name">Gender:</p><br>
         <div class=gender>
-        <input type="radio"  id="Male" name="Gender" value="Male">
-        <label>Male</label><br>
-        <input type="radio" id="Female" name="Gender" value="Female">
-        <label>Female</label><br>
-        <input type="radio" id="Custom" name="Gender" value="Custom">
+        <input type="radio"  id="Male" name="Gender" value="Male" required>
+        <label>Male</label>
+        <input type="radio" id="Female" name="Gender" value="Female" required>
+        <label>Female</label>
+        <input type="radio" id="Custom" name="Gender" value="Custom" required>
         <label>Custom</label>
         </div>
         <label for="fname">Language:</label>
-        <input class="ltext" type="text" id="name" name="name" value=""><br>
+        <input class="ltext" type="text" id="name" name="name" value="" placeholder="Language" pattern="[a-z]{1,15}" title="should include characters" required><br>
+        <label>Date:</label>
+        <input class="mtext" type="date" required><br>
+ 
         <input class="btn" type="submit" value="Submit">
       
       
